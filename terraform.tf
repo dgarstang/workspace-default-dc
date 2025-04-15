@@ -13,6 +13,9 @@ terraform {
       source  = "hashicorp/kubernetes"
       version = "~> 2.0"
     }
+    wireguard = {
+      source = "ojford/wireguard"
+    }
     null = {
       source  = "hashicorp/null"
       version = "~> 3.0"
