@@ -36,14 +36,14 @@ module "wireguard_client" {
 #
 # Provision GKE cluster
 #
-module "gke" {
+/* module "gke" {
   source           = "git::https://github.com/dgarstang/terraform-google-gke.git"
   count            = var.create_gke ? 1 : 0
   project_id       = var.project_id
   gke_cluster_name = var.gke_cluster_name
   region           = var.region
   depends_on       = [module.network]
-}
+} */
 
 /*
 module "argocd" {
